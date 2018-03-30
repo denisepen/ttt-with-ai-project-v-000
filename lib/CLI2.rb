@@ -65,13 +65,13 @@ class CLI2
               puts "You are 'X' and the computer is 'O'"
               g = Game.new(Players::Human.new("X"), Players::Computer.new("O"), board = Board.new)
               g.play
-              board.display
+              # board.display
               again?
             elsif input3 == "2"
               puts "You are 'O'and the computer is 'X'"
               g = Game.new(Players::Computer.new("X"), Players::Human.new("O"), board = Board.new)
               g.play
-              board.display
+              # board.display
               again?
             else
               puts "Please choose either '1' or '2'"
@@ -83,7 +83,7 @@ class CLI2
     puts "Player 1 is 'X'"
     puts "Player 2 is 'O'"
     g.play
-    board.display
+    # board.display
     again?
 
   else
