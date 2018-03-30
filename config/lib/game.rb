@@ -54,10 +54,11 @@ def turn
 player = current_player
 current_move = player.move(board)
   if board.valid_move?(current_move)
-    board.update(current_move, player)
-    board.display
+    @board.update(current_move, player)
+    @board.dsiplay
+
   else
-    puts "That move isn't valid. Please choose another position"
+    puts "Oops, that move is not valid! Please choose again."
      player.move(board)
   end
 end
@@ -69,8 +70,11 @@ def play
 
   if won?
     puts "Congratulations #{winner}!"
+      @board.display
+
   else
     puts "Cat's Game!"
+    @board.display
   end
   end
 

@@ -2,17 +2,55 @@
 
 require_relative '../config/environment'
 
-puts "Hello and welcome to Tic Tac Toe!"
-puts "How do you want to play?"
-puts "To play against another player press 1"
-puts "To play against the computer press 2"
-puts "To watch the computer play itself press 3"
+CLI2.new.call
 
+
+# puts "Hello and welcome to Tic Tac Toe!"
+# puts "How do you want to play?"
+# puts "To play against another player press 1"
+# puts "To play against the computer press 2"
+# puts "To watch the computer play itself press 3"
+
+
+# input = gets.strip
+
+# if input == "1"
+#   g = Game.new
+#   b = Board.new
+#   player_1 = Players::Human.new("X")
+#   player_2 = Players::Human.new("O")
+#   puts "Player 1 is 'X'"
+#   puts "Player 2 is 'O'"
+#   g.play
+#
+# end
+
+# if input == "2"
+#   player_1 = Players::Human.new("X")
+#   player_2 = Players::Computer.new("O")
+#   puts "You are player 'X'"
+#   puts "The computer is 'O'"
+#   b = Board.new
+#   g = Game.new
+#   g.play
+#
+# end
+#
+# if input == "3"
+#   player_1 = Players::Computer.new("X")
+#   player_2 = Players::Computer.new("O")
+#   b = Board.new
+#   g = Game.new
+#   g.play
+#
+# end
+
+#need a way to end the game when tired of playing
 #1) if against another player:
   # player 1 = x and player 2 = 0
   # later on ask if they want to be player 1 or 2
 #2) if against the computer
   #player goes first and x
   #if I have time ask if player wants to go first or second
-#3) if player wants to watch computer game then create 2 board objects
+#3) if player wants to watch computer game then create 2 player objects
   # and assign each one a token and then let them play
