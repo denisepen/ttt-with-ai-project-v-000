@@ -46,13 +46,13 @@ class CLI2
               puts "You are 'X'"
               g = Game.new(Players::Human.new("X"), Players::Human.new("O"), board = Board.new)
               g.play
-              board.display
+              # board.display
               again?
             else
               puts "You are 'O'"
               g = Game.new(Players::Human.new("O"), Players::Human.new("X"), board = Board.new)
               g.play
-              board.display
+              # board.display
               again?
             end
 
